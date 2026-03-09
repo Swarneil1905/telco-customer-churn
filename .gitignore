@@ -1,0 +1,13 @@
+.venv/
+.jupyter_runtime/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+.pytest_cache/
+.DS_Store
+
+models/all_models.joblib
+.env
+.env.*
+*.log
