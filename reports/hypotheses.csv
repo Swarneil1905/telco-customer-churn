@@ -1,0 +1,3 @@
+comparison,difference,lower,upper,conclusion
+Gradient boosting minus logistic AP,0.0003497422170826159,-0.022300867633534442,0.02450376377524388,Inconclusive
+Tuned minus default threshold F1,0.0698063508410035,0.03396830814100009,0.10835427806074828,Positive difference supported
