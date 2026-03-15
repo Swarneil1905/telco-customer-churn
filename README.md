@@ -5,6 +5,8 @@ PyTorch neural network, and a Streamlit app. The question is
 how well customer profiles rank churn risk and how the decision threshold
 changes false alarms and missed churners.
 
+[Open Signal on Streamlit Community Cloud](https://swarneil-telco-churn.streamlit.app/)
+
 ## Start here
 
 1. Open [the executed notebook](Telco_Customer_Churn.ipynb).
@@ -146,10 +148,11 @@ processes uploads in memory and does not save them to disk.
 The validation threshold explorer does not modify the deployed decision
 rule. Test metrics remain measurements of the previously frozen choices.
 
-## Deploy later on Streamlit Community Cloud
+## Streamlit Community Cloud deployment
 
-After reviewing the local results, publish the repository and select:
+The live app runs from this public repository with these settings:
 
+- Branch: `main`
 - Entry point: `app.py`
 - Python: 3.11
 - Dependencies: root `requirements.txt`
@@ -175,3 +178,10 @@ reviewing this test set needs a fresh final evaluation set.
 - [IBM Telco example](https://github.com/IBM/telco-customer-churn-on-icp4d)
 - [Scikit-learn decision thresholds](https://scikit-learn.org/stable/modules/classification_threshold.html)
 - [Scikit-learn average precision](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html)
+
+## Hosted prediction check
+
+The default customer returns 2.5% churn probability on the hosted app,
+matching the local fitted model.
+
+![Hosted Signal customer studio](reports/telco-live.jpg)
